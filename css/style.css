@@ -44,13 +44,11 @@
 }
 
 .card__img {
-  align-items: center;
-  width: 380px;
+  width: 200px;
   height: 200px;
   align-self: center;
-  background-size: cover;
   border-radius: 10px;
-  transition: transform 1s;
+  background-size: contain;
 }
 
 .card__title:hover {
