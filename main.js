@@ -32,19 +32,22 @@ function showCharacters (JSONObj) {
             const status = makeElement('p', 'card__status');
             const species = makeElement('p', 'card__species');
             const gender = makeElement('p', 'card__gender');
-            // const cardImg = makeElement('img', 'card__img');
+            // const location =  makeElement('p', 'card__location');
+            const cardImg = makeElement('img', 'card__img');
     
             name.textContent = 'Название: ' + characters[i].name;
             status.textContent = 'Статус:  ' + characters[i].status;
             species.textContent = 'Вид:  ' + characters[i].species;
             gender.textContent = 'Пол:  ' + characters[i].gender;
+            // location.textContent = 'Место нахождения' + characters[i].location;
 
             
-            // article.appendChild(cardImg);
+            article.appendChild(cardImg);
             article.appendChild(name);
             article.appendChild(status);
             article.appendChild(species);
             article.appendChild(gender);
+            // article.appendChild(location);
             rootElement.appendChild(article); 
         startBTN.style.display = 'none';
         }
